@@ -3,6 +3,7 @@ import MainLayout from "../Layouts/MainLayout";
 import Home from "../Pages/Home";
 import AllToys from "../Pages/AllToys";
 import MyProfile from "../Pages/MyProfile";
+import ToyDetails from "../Pages/ToyDetails";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
                 path: "/my-profile",
                 element: <MyProfile/>,
             },
+            {
+                path: "/toyDetails/:id",
+                element: <ToyDetails/>
+            }
         ],
     },
 ]);

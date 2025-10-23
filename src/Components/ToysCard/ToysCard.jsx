@@ -3,7 +3,7 @@ import { FaStarHalfAlt } from 'react-icons/fa';
 import { Link } from 'react-router';
 
 const ToysCard = ({data}) => {
-    const { toyName, pictureURL, price, rating, availableQuantity, description } = data;
+    const { toyName, pictureURL, price, rating, availableQuantity, description, toyId } = data;
     return (
         <div>
             <div className=" rounded-lg shadow-md overflow-hidden border border-gray-200 hover:scale-102 hover:shadow-lg transition-shadow ease-in-out p-3 h-[px]">
@@ -33,9 +33,9 @@ const ToysCard = ({data}) => {
                     </div>
                     <div>
                         <h2 className="font-bold">DesCription:</h2>
-                        <div className='text-gray-500'>{description.length > 200 ? <>{description.slice(0, 50)}......</> : description}</div>
+                        <div className="text-gray-500">{description.length > 200 ? <>{description.slice(0, 50)}......</> : description}</div>
                     </div>
-                    <Link  className='btn bg-amber-500 w-full mt-2'>
+                    <Link to={`/toyDetails/${toyId}`} className="btn bg-amber-500 w-full mt-2">
                         View More
                     </Link>
                 </div>
