@@ -19,7 +19,7 @@ const Register = () => {
         const photo = form.photo.value;
         const email = form.email.value;
         const password = form.password.value;
-        if(name.lemgth < 5){
+        if(name.length < 5){
             setNameError("Name must be more than 5 charecters")
             return;
         }else{
@@ -28,7 +28,7 @@ const Register = () => {
 
         const validPassword = /[A-Z]/.test(password) && /[a-z]/.test(password) && password.length >= 6;
         if(!validPassword){
-            alert("Error", "Password must contain upperCase, lowerCase, and must be at least 6 charecter")
+            alert( "Password must contain upperCase, lowerCase, and must be at least 6 charecter")
             return
         }
 
