@@ -1,14 +1,17 @@
 import { Link, NavLink } from "react-router";
 import logo from "../../assets/logo.png"
+import { useContext } from "react";
+import  { AuthContext } from "../../Provider/AuthProvider";
 
 const Navbar = () => {
+    const {user , logout} = useContext(AuthContext);
     return (
         <div className="bg-blend-darken shadow-sm">
             <div className="navbar w-11/12 mx-auto">
                 {/* LEFT - Logo */}
                 <div className="navbar-start">
                     <Link to="/" className="flex items-center gap-2 text-xl font-bold text-primary">
-                        <img src={logo} alt="logo" className="w-12"/>
+                        <img src={logo} alt="logo" className="w-12" />
                     </Link>
                 </div>
 
@@ -32,10 +35,20 @@ const Navbar = () => {
                 <div className="navbar-end">
                     {/* Mobile Menu + Buttons */}
                     <div className="flex items-center gap-2 lg:hidden">
-                        <Link to="/login" className="btn btn-primary btn-sm">
-                            Login
-                        </Link>
-                        
+                        {!user ? (
+                            <Link to="/login" className="btn btn-primary btn-sm">
+                                Login
+                            </Link>
+                        ) : (
+                            <div className="flex items-center gap-2">
+                                <div className="tooltip tooltip-bottom" data-tip={user?.displayName || "No Name"}>
+                                    <img src={user?.photoURL || "/default-avatar.png"} referrerPolicy="no-referrer" alt="User" className="w-10 h-10 rounded-full border border-gray-300 object-cover" />
+                                </div>
+                                <button onClick={logout} className="btn btn-sm btn-outline">
+                                    LogOut
+                                </button>
+                            </div>
+                        )}
 
                         <div className="dropdown dropdown-end">
                             <div tabIndex={0} role="button" className="btn btn-ghost">
@@ -60,10 +73,20 @@ const Navbar = () => {
 
                     {/* Desktop Buttons */}
                     <div className="hidden lg:flex items-center gap-2">
-                        <Link to="/login" className="btn btn-primary btn-sm w-20">
-                            Login
-                        </Link>
-                        
+                        {!user ? (
+                            <Link to="/login" className="btn btn-primary btn-sm w-20">
+                                Login
+                            </Link>
+                        ) : (
+                            <div className="flex items-center gap-2">
+                                <div className="tooltip tooltip-bottom" data-tip={user?.displayName || "No Name"}>
+                                    <img src={user?.photoURL || "/default-avatar.png"} referrerPolicy="no-referrer" alt="User" className="w-10 h-10 rounded-full border border-gray-300 object-cover" />
+                                </div>
+                                <button onClick={logout} className="btn btn-primary">
+                                    LogOut
+                                </button>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>

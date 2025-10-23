@@ -56,7 +56,7 @@ const LogIn = () => {
                         <label className="font-bold ">Password</label>
                         <div className="relative">
                             <input type={showPassword ? "text" : "password"} name="password" className="input" placeholder="Enter Your Password" required />
-                            <span className="absolute right-4 top-3 cursor-pointer text-xl text-gray-400" onClick={() => setShowPassword(!showPassword)}>
+                            <span className="absolute right-6 top-3 cursor-pointer text-xl " onClick={() => setShowPassword(!showPassword)}>
                                 {showPassword ? <BsEyeSlash/> : <BsEye/>}
                             </span>
                         </div>
@@ -81,7 +81,7 @@ const LogIn = () => {
                 </div>
                 <div className="flex justify-center items-center">
                     <button onClick={handleGoogleLogIn} className="btn bg-orange-300  mt-3  border-[#e5e5e5] text-black">
-                        <FcGoogle />
+                        <FcGoogle/>
                         Login with Google
                     </button>
                 </div>
