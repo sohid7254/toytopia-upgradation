@@ -5,6 +5,8 @@ import AllToys from "../Pages/AllToys";
 import MyProfile from "../Pages/MyProfile";
 import ToyDetails from "../Pages/ToyDetails";
 import Error404 from "../Pages/Error404";
+import LogIn from "../Pages/LogIn";
+import Register from "../Pages/Register";
 
 const router = createBrowserRouter([
     {
@@ -26,6 +28,14 @@ const router = createBrowserRouter([
             {
                 path: "/toyDetails/:id",
                 element: <ToyDetails/>
+            },
+            {
+                path: "/login",
+                element:<LogIn/>
+            },
+            {
+                path: "/register",
+                element: <Register/>
             }
         ],
     },
