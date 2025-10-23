@@ -7,6 +7,7 @@ import ToyDetails from "../Pages/ToyDetails";
 import Error404 from "../Pages/Error404";
 import LogIn from "../Pages/LogIn";
 import Register from "../Pages/Register";
+import ResetPass from "../Pages/ResetPass";
 
 const router = createBrowserRouter([
     {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
             {
                 path: "/register",
                 element: <Register/>
+            },
+            {
+                path: "/resetpass",
+                element: <ResetPass/>
             }
         ],
     },

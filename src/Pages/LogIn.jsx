@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
@@ -6,6 +6,7 @@ import Swal from "sweetalert2";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
 
 const LogIn = () => {
+    const emailRef = useRef()
     const { login, loginWithGoogle, setUser, loading, setLoading } = useContext(AuthContext);
     const [showPassword, setShowPassword] = useState(false);
     const navigate = useNavigate();
@@ -51,17 +52,19 @@ const LogIn = () => {
                     <fieldset className="fieldset">
                         {/* email */}
                         <label className="font-bold">Email Address</label>
-                        <input type="email" name="email" className="input" placeholder="Enter your email address" required />
+                        <input type="email" ref={emailRef} name="email" className="input" placeholder="Enter your email address" required />
                         {/* password */}
                         <label className="font-bold ">Password</label>
                         <div className="relative">
                             <input type={showPassword ? "text" : "password"} name="password" className="input" placeholder="Enter Your Password" required />
                             <span className="absolute right-6 top-3 cursor-pointer text-xl " onClick={() => setShowPassword(!showPassword)}>
-                                {showPassword ? <BsEyeSlash/> : <BsEye/>}
+                                {showPassword ? <BsEyeSlash /> : <BsEye />}
                             </span>
                         </div>
                         <div>
-                            <Link to={"/forgot-password"} className="link link-hover">Forgot password?</Link>
+                            <Link to={"/resetpass"} state={{email: emailRef.current?.value}} className="link link-hover">
+                                Forgot password?
+                            </Link>
                         </div>
 
                         <button type="submit" className="btn btn-neutral mt-4">
@@ -81,7 +84,7 @@ const LogIn = () => {
                 </div>
                 <div className="flex justify-center items-center">
                     <button onClick={handleGoogleLogIn} className="btn bg-orange-300  mt-3  border-[#e5e5e5] text-black">
-                        <FcGoogle/>
+                        <FcGoogle />
                         Login with Google
                     </button>
                 </div>
