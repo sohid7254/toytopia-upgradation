@@ -35,7 +35,7 @@ const Navbar = () => {
                         <Link to="/login" className="btn btn-primary btn-sm">
                             Login
                         </Link>
-                        <button className="btn btn-outline btn-sm">Logout</button>
+                        
 
                         <div className="dropdown dropdown-end">
                             <div tabIndex={0} role="button" className="btn btn-ghost">
@@ -60,10 +60,10 @@ const Navbar = () => {
 
                     {/* Desktop Buttons */}
                     <div className="hidden lg:flex items-center gap-2">
-                        <Link to="/login" className="btn btn-primary btn-sm">
+                        <Link to="/login" className="btn btn-primary btn-sm w-20">
                             Login
                         </Link>
-                        <button className="btn btn-outline btn-sm">Logout</button>
+                        
                     </div>
                 </div>
             </div>

@@ -4,6 +4,7 @@ import Home from "../Pages/Home";
 import AllToys from "../Pages/AllToys";
 import MyProfile from "../Pages/MyProfile";
 import ToyDetails from "../Pages/ToyDetails";
+import Error404 from "../Pages/Error404";
 
 const router = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
             }
         ],
     },
+    {
+        path: "*",
+        element: <Error404/>
+    }
 ]);
 
 

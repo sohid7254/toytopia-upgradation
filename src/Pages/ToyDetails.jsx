@@ -18,6 +18,7 @@ const ToyDetails = () => {
             </section>
 
             <aside className="md:col-span-3">
+                <h2 className="font-bold text-xl mb-4">Subscribe to Our Newsletter</h2>
                 <RightAside />
             </aside>
         </main>
