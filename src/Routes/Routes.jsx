@@ -9,6 +9,8 @@ import LogIn from "../Pages/LogIn";
 import Register from "../Pages/Register";
 import ResetPass from "../Pages/ResetPass";
 import Feedback from "../Pages/Feedback";
+import TermsAndConditions from "../Pages/TermsAndConditions";
+import PrivacyPolicy from "../Pages/PrivacyPolicy";
 
 const router = createBrowserRouter([
     {
@@ -46,6 +48,14 @@ const router = createBrowserRouter([
             {
                 path: "/feedback",
                 element: <Feedback/>
+            },
+            {
+                path:"/terms",
+                element:<TermsAndConditions/>
+            },
+            {
+                path: "/privacy",
+                element: <PrivacyPolicy/>
             }
         ],
     },

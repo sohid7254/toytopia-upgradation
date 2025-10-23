@@ -41,8 +41,12 @@ const Footer = () => {
                     </nav>
                     <nav>
                         <h6 className="footer-title">Legal</h6>
-                        <Link className="link link-hover">Terms of use</Link>
-                        <Link className="link link-hover">Privacy policy</Link>
+                        <Link to={"/terms"} className="link link-hover">
+                            Terms of use
+                        </Link>
+                        <Link to={"/privacy"} className="link link-hover">
+                            Privacy policy
+                        </Link>
                         <Link className="link link-hover">Cookie policy</Link>
                     </nav>
                     <form onSubmit={handleSubmit}>
