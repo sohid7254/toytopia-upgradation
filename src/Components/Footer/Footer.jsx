@@ -25,7 +25,7 @@ const Footer = () => {
             <div className="w-11/12 mx-auto">
                 <div className="footer sm:footer-horizontal  text-base-content px-4">
                     <aside>
-                        <img src={logo} alt="logo" className="w-20" />
+                        <img to={"/"} src={logo} alt="logo" className="w-20" />
                         <p className="text-gray-400 font-semibold">
                             Toy-Topia
                             <br />

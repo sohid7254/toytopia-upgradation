@@ -11,6 +11,7 @@ import ResetPass from "../Pages/ResetPass";
 import Feedback from "../Pages/Feedback";
 import TermsAndConditions from "../Pages/TermsAndConditions";
 import PrivacyPolicy from "../Pages/PrivacyPolicy";
+import PrivateRoute from "../Provider/PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -23,46 +24,62 @@ const router = createBrowserRouter([
             },
             {
                 path: "/allToys",
-                element: <AllToys />,
+                element: (
+                    <PrivateRoute>
+                        <AllToys />
+                    </PrivateRoute>
+                ),
             },
             {
                 path: "/my-profile",
-                element: <MyProfile/>,
+                element: (
+                    <PrivateRoute>
+                        <MyProfile />
+                    </PrivateRoute>
+                ),
             },
             {
                 path: "/toyDetails/:id",
-                element: <ToyDetails/>
+                element: (
+                    <PrivateRoute>
+                        <ToyDetails />
+                    </PrivateRoute>
+                ),
             },
             {
                 path: "/login",
-                element:<LogIn/>
+                element: <LogIn />,
             },
             {
                 path: "/register",
-                element: <Register/>
+                element: <Register />,
             },
             {
                 path: "/resetpass",
-                element: <ResetPass/>
+                element: <ResetPass />,
             },
             {
                 path: "/feedback",
-                element: <Feedback/>
+                element: (
+                    <PrivateRoute>
+                        <Feedback />
+                    </PrivateRoute>
+                ),
             },
             {
-                path:"/terms",
-                element:<TermsAndConditions/>
+                path: "/terms",
+                element: <TermsAndConditions />,
             },
             {
                 path: "/privacy",
-                element: <PrivacyPolicy/>
-            }
+                element: <PrivacyPolicy />,
+            },
         ],
     },
     {
         path: "*",
-        element: <Error404/>
-    }
+        element: <Error404 />,
+    },
 ]);
 
 
