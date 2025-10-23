@@ -8,6 +8,7 @@ import Error404 from "../Pages/Error404";
 import LogIn from "../Pages/LogIn";
 import Register from "../Pages/Register";
 import ResetPass from "../Pages/ResetPass";
+import Feedback from "../Pages/Feedback";
 
 const router = createBrowserRouter([
     {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
             {
                 path: "/resetpass",
                 element: <ResetPass/>
+            },
+            {
+                path: "/feedback",
+                element: <Feedback/>
             }
         ],
     },

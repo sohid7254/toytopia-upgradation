@@ -28,6 +28,11 @@ const Navbar = () => {
                                 My Profile
                             </NavLink>
                         </li>
+                        <li>
+                            <NavLink to="/feedback" className={({ isActive }) => (isActive ? "text-purple-600 font-bold" : "text-gray-600")}>
+                                FeedBack
+                            </NavLink>
+                        </li>
                     </ul>
                 </div>
 
@@ -65,6 +70,11 @@ const Navbar = () => {
                                 <li>
                                     <NavLink to="/my-profile" className={({ isActive }) => (isActive ? "text-purple-600 font-bold" : "text-gray-600")}>
                                         My Profile
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/feedback" className={({ isActive }) => (isActive ? "text-purple-600 font-bold" : "text-gray-600")}>
+                                        FeedBack
                                     </NavLink>
                                 </li>
                             </ul>
