@@ -50,17 +50,18 @@ const Register = () => {
                 Swal.fire("Error", error.message, "error")
             })
     }
-    const handleGoogleLogIn = async() => {
-        try{
-            const result = await loginWithGoogle();
-            const user = result.user
-            setUser(user);
-            Swal.fire("Success", "Signed in With Google", "success")
-            navigate("/")   
-        } catch(error)  {
-            Swal.fire("Error", error.message, "error")
-        } 
-    }
+    const handleGoogleLogIn = () => {
+        loginWithGoogle()
+            .then((result) => {
+                const user = result.user;
+                setUser(user);
+                Swal.fire("Success", "Signed in With Google", "success");
+                navigate("/login");
+            })
+            .catch((error) => {
+                Swal.fire("Error", error.message, "error");
+            });
+    };
 
 
     return (
