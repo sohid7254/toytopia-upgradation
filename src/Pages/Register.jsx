@@ -1,6 +1,6 @@
-import React from 'react';
-import { FcGoogle } from 'react-icons/fc';
-import { Link } from 'react-router';
+import React from "react";
+import { FcGoogle } from "react-icons/fc";
+import { Link } from "react-router";
 
 const Register = () => {
     return (
