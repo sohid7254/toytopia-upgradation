@@ -48,9 +48,9 @@ const Navbar = () => {
                         ) : (
                             <div className="flex items-center gap-2">
                                 <div className="tooltip tooltip-bottom" data-tip={user?.displayName || "No Name"}>
-                                    <img src={user?.photoURL || "/default-avatar.png"} referrerPolicy="no-referrer" alt="User" className="w-12 h-12 rounded-full object-cover border border-gray-300 flex-shrink-0" />
+                                    <img src={user?.photoURL || "/default-avatar.png"} referrerPolicy="no-referrer" alt="User" className="w-12 h-12 rounded-full object-cover border border-gray-300 " />
                                 </div>
-                                <button onClick={logout} className="btn btn-sm btn-outline">
+                                <button onClick={logout} className="btn btn-primary">
                                     LogOut
                                 </button>
                             </div>
@@ -92,7 +92,7 @@ const Navbar = () => {
                         ) : (
                             <div className="flex items-center gap-4">
                                 <div className="tooltip tooltip-bottom" data-tip={user?.displayName || "No Name"}>
-                                    <img src={user?.photoURL || "/default-avatar.png"} referrerPolicy="no-referrer" alt="User" className="w-12 h-12 rounded-full object-cover border border-gray-300 flex-shrink-0" />
+                                    <img src={user?.photoURL || "/default-avatar.png"} referrerPolicy="no-referrer" alt="User" className="w-12 h-12 rounded-full object-cover border border-gray-300 " />
                                 </div>
                                 <button onClick={logout} className="btn btn-primary">
                                     LogOut

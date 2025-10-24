@@ -1,16 +1,52 @@
-# React + Vite
+#  Toy-Topia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A vibrant, responsive toy marketplace built with React, TailwindCSS, and Firebase — designed to delight users with playful UI, secure authentication, and educational content.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Live Site
 
-## React Compiler
+[🔗 Visit Toy-Topia](https://toytopia-94e77.web.app)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+##  Purpose
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Toy-Topia is a single-page application (SPA) that showcases a curated collection of toys for children, with features like user authentication, profile management, feedback submission, and newsletter subscription. It’s built to demonstrate real-world UI/UX polish, modular component design, and secure routing logic.
+
+---
+
+##  Key Features
+
+-  **Authentication System**  
+  Email/password login, Google login, password reset, and protected routes using context-driven AuthProvider.
+
+-  **Responsive Navigation**  
+  Mobile-friendly navbar with dropdowns, tooltips, and dynamic user avatar display.
+
+-  **Newsletter Subscription**  
+  SweetAlert feedback on successful subscription with input validation.
+
+-  **User Profile & Feedback Pages**  
+  Protected routes with personalized content and real-world logic.
+
+-  **Terms & Privacy Pages**  
+  Assignment-ready legal pages with modular layout and realistic content.
+
+-  **Polished UI**  
+  TailwindCSS + DaisyUI for clean, accessible design with playful branding.
+
+---
+
+##  NPM Packages Used
+
+| Package Name         | Purpose                                      |
+|----------------------|----------------------------------------------|
+| `react-router-dom`   | SPA routing and navigation                   |
+| `firebase`           | Authentication and backend services          |
+| `sweetalert2`        | Beautiful alert modals for feedback          |
+| `react-icons`        | Icon library for social and UI elements      |
+| `daisyui`            | TailwindCSS component library                |
+| `tailwindcss`        | Utility-first CSS framework                  |
+
+---
