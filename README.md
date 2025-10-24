@@ -42,8 +42,7 @@ Toy-Topia is a single-page application (SPA) that showcases a curated collection
 
 | Package Name         | Purpose                                      |
 |----------------------|----------------------------------------------|
-| `react-router
-`   | SPA routing and navigation                   |
+| `react-router`       | SPA routing and navigation                   |
 | `firebase`           | Authentication and backend services          |
 | `sweetalert2`        | Beautiful alert modals for feedback          |
 | `react-icons`        | Icon library for social and UI elements      |
