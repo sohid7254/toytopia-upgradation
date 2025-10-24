@@ -23,6 +23,7 @@ const Feedback = () => {
 
     return (
         <div className="max-w-xl mx-auto py-10 px-4">
+            <title>Toy-Topia | Feedback</title>
             <h2 className="text-2xl font-bold text-purple-700 mb-4">We value your feedback</h2>
             <p className="text-sm text-gray-600 mb-6">Let us know what you think, suggest improvements, or report any issues.</p>
             <form onSubmit={handleSubmit} className="space-y-4">

@@ -7,7 +7,7 @@ import { RiNavigationFill } from "react-icons/ri";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
 
 const Register = () => {
-    const {setUser, creatUser, updateUser, loginWithGoogle} = useContext(AuthContext)
+    const {setUser, creatUser, updateUser, loginWithGoogle, loading} = useContext(AuthContext)
     const [nameError, setNameError] = useState("")
     const [showPassword, setShowPassword] = useState(false)
     const navigate =  useNavigate();
@@ -66,6 +66,7 @@ const Register = () => {
 
     return (
         <div className="flex justify-center items-center min-h-screen my-5">
+            <title>Toy-Topia | Register</title>
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl py-5">
                 <h2 className="text-2xl font-semibold text-center">Register Your Account</h2>
                 <form className="card-body" onSubmit={handleRegister}>
@@ -91,7 +92,7 @@ const Register = () => {
                         </div>
                         {/* button */}
                         <button type="submit" className="btn btn-neutral mt-4">
-                            Register
+                            {loading ? "Registering...." : "Register"}
                         </button>
 
                         <p className="text-center font-semibold pt-2">

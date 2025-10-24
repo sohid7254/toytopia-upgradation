@@ -3,6 +3,7 @@ import React from "react";
 const PrivacyPolicy = () => {
     return (
         <div className="max-w-4xl mx-auto py-10 px-4">
+            <title>Toy-Topia | Privacy</title>
             <h2 className="text-3xl font-bold text-purple-700 mb-6">Privacy Policy</h2>
             <div className="space-y-4 text-gray-700 text-sm leading-relaxed">
                 <p>We value your privacy. This policy explains how we collect, use, and protect your personal information when you use our platform.</p>

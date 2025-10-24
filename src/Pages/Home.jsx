@@ -13,13 +13,14 @@ const Home = () => {
     const toyData = data.slice(0, 8)
     return (
         <>
+        <title>Toy-Topia | Home</title>
             <Banner />
             <Slider />
             <FeaturedCategory />
 
             <div>
                 <div className="w-11/12 mx-auto mb-5">
-                    <h2 className="text-2xl font-bold">Popular Toys</h2>
+                    <h2 className="md:text-3xl text-2xl font-bold text-center">Popular Toys</h2>
                 </div>
                 {loading ? (
                     <LoadingAnimation />

@@ -1,8 +1,11 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const TermsAndConditions = () => {
     return (
         <div className="max-w-4xl mx-auto py-10 px-4">
+            <title>Toy-Topia | Terms And Conditions</title>
+
             <h2 className="text-3xl font-bold text-purple-700 mb-6">Terms & Conditions</h2>
             <div className="space-y-4 text-gray-700 text-sm leading-relaxed">
                 <p>By accessing and using this website, you agree to comply with the following terms and conditions. These terms apply to all users, visitors, and registered members.</p>

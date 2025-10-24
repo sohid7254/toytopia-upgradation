@@ -11,6 +11,7 @@ const ResetPass = () => {
     const handleReset = (e) => {
         e.preventDefault();
         const email = e.target.email.value;
+        
 
         resetPassword(email)
             .then(() => {
@@ -24,10 +25,18 @@ const ResetPass = () => {
 
     return (
         <div className="min-h-screen flex justify-center items-center bg-base-200 px-4">
+            <title>Toy-Topia | ResetPass</title>
             <div className="card w-full max-w-sm bg-base-100 shadow-xl p-6">
                 <h2 className="text-xl font-bold text-center mb-4">Reset Your Password</h2>
                 <form onSubmit={handleReset} className="space-y-4">
-                    <input type="email" name="email" required defaultValue={defaultEmail} placeholder="Enter your email" className="input input-bordered w-full" required />
+                <input 
+                    type="email" 
+                    name="email" 
+                    required 
+                    defaultValue={defaultEmail} 
+                    placeholder="Enter your email" 
+                    className="input input-bordered w-full" 
+                />
                     <button type="submit" className="btn btn-primary w-full">
                         Send Reset Link
                     </button>

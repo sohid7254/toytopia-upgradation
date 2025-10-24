@@ -23,7 +23,7 @@ const RightAsideForm = () => {
         Swal.fire({
             icon: "success",
             title: "Subscribed!",
-            text: "Thank you for subscribing to our newsletter.",
+            text: "A short email you will receive",
             timer: 2000,
             showConfirmButton: false,
         });

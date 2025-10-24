@@ -4,7 +4,9 @@ import { Link } from "react-router";
 
 const Error404 = () => {
     return (
+        
         <div className="max-w-[1200px] mx-auto">
+            <title>Error-404</title>
             <div className="space-y-5 mt-10">
                 <div className="flex justify-center items-center">
                     <img src={error4} alt="AppError" className="w-70" />

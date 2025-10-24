@@ -22,6 +22,7 @@ const MyProfile = () => {
 
     return (
         <main className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 py-8 px-4 sm:px-6 lg:px-8">
+            <title>Toy-Topia | Profile</title>
             {/* Profile Card */}
             <section>
                 <div className="card w-full bg-gradient-to-br from-purple-100 via-white to-orange-100 shadow-lg p-6 border border-purple-200 rounded-xl">
@@ -39,7 +40,7 @@ const MyProfile = () => {
 
             {/* Update Form */}
             <section>
-                <form onSubmit={handleChange} className="w-full space-y-4 bg-gradient-to-br from-purple-50 via-white to-orange-50 p-6 rounded-xl shadow-md border border-purple-200">
+                <form onSubmit={handleChange} className="w-full space-y-4 bg-gradient-to-br from-purple-50 via-white to-orange-50 p-6 rounded-xl shadow-md border border-purple-200 md:mt-10">
                     <div>
                         <label className="font-semibold text-gray-700">Your Name</label>
                         <input type="text" name="name" defaultValue={user?.displayName} placeholder="Update Name" className="input input-bordered w-full focus:outline-none focus:ring-2 focus:ring-purple-400 transition duration-200" required />
@@ -47,7 +48,7 @@ const MyProfile = () => {
 
                     <div>
                         <label className="font-semibold text-gray-700">Image URL</label>
-                        <input type="text" name="photoURL" defaultValue={user?.photoURL} referrerPolicy="no-referrer" placeholder="Update Image URL" className="input input-bordered w-full focus:outline-none focus:ring-2 focus:ring-orange-400 transition duration-200" required />
+                        <input type="text" name="photoURL" defaultValue={user?.photoURL} placeholder="Update Image URL" className="input input-bordered w-full focus:outline-none focus:ring-2 focus:ring-orange-400 transition duration-200" required />
                     </div>
 
                     <button type="submit" className="btn bg-gradient-to-r from-purple-500 to-orange-400 text-white font-bold hover:scale-105 transition-transform duration-200 w-full">

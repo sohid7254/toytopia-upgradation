@@ -1,22 +1,23 @@
 import { Link, NavLink } from "react-router";
-import logo from "../../assets/logo.png"
+import logo from "../../assets/logo.png";
 import { useContext } from "react";
-import  { AuthContext } from "../../Provider/AuthProvider";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Navbar = () => {
-    const {user , logout} = useContext(AuthContext);
+    const { user, logout } = useContext(AuthContext);
+
     return (
         <div className="bg-blend-darken shadow-sm">
-            <div className="navbar w-11/12 mx-auto">
+            <div className="navbar w-11/12 mx-auto flex items-center justify-between lg:justify-between">
                 {/* LEFT - Logo */}
-                <div className="navbar-start">
+                <div className="">
                     <Link to="/" className="flex items-center gap-2 text-xl font-bold text-primary">
                         <img src={logo} alt="logo" className="w-12" />
                     </Link>
                 </div>
 
                 {/* CENTER - Links (Desktop only) */}
-                <div className="navbar-center hidden lg:flex">
+                <div className=" hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         <li>
                             <NavLink to="/" className={({ isActive }) => (isActive ? "text-purple-600 font-bold" : "text-gray-600")}>
@@ -37,8 +38,8 @@ const Navbar = () => {
                 </div>
 
                 {/* RIGHT - Buttons */}
-                <div className="navbar-end">
-                    {/* Mobile Menu + Buttons */}
+                <div className="">
+                    {/* Mobile View */}
                     <div className="flex items-center gap-2 lg:hidden">
                         {!user ? (
                             <Link to="/login" className="btn btn-primary btn-sm">
@@ -47,7 +48,7 @@ const Navbar = () => {
                         ) : (
                             <div className="flex items-center gap-2">
                                 <div className="tooltip tooltip-bottom" data-tip={user?.displayName || "No Name"}>
-                                    <img src={user?.photoURL || "/default-avatar.png"} referrerPolicy="no-referrer" alt="User" className="w-10 h-10 rounded-full border border-gray-300 object-cover" />
+                                    <img src={user?.photoURL || "/default-avatar.png"} referrerPolicy="no-referrer" alt="User" className="w-12 h-12 rounded-full object-cover border border-gray-300 flex-shrink-0" />
                                 </div>
                                 <button onClick={logout} className="btn btn-sm btn-outline">
                                     LogOut
@@ -55,6 +56,7 @@ const Navbar = () => {
                             </div>
                         )}
 
+                        {/* Mobile Dropdown */}
                         <div className="dropdown dropdown-end">
                             <div tabIndex={0} role="button" className="btn btn-ghost">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -81,16 +83,16 @@ const Navbar = () => {
                         </div>
                     </div>
 
-                    {/* Desktop Buttons */}
-                    <div className="hidden lg:flex items-center gap-2">
+                    {/* Desktop View */}
+                    <div className="hidden lg:flex items-center gap-4">
                         {!user ? (
                             <Link to="/login" className="btn btn-primary btn-sm w-20">
                                 Login
                             </Link>
                         ) : (
-                            <div className="flex items-center gap-2">
+                            <div className="flex items-center gap-4">
                                 <div className="tooltip tooltip-bottom" data-tip={user?.displayName || "No Name"}>
-                                    <img src={user?.photoURL || "/default-avatar.png"} referrerPolicy="no-referrer" alt="User" className="w-10 h-10 rounded-full border border-gray-300 object-cover" />
+                                    <img src={user?.photoURL || "/default-avatar.png"} referrerPolicy="no-referrer" alt="User" className="w-12 h-12 rounded-full object-cover border border-gray-300 flex-shrink-0" />
                                 </div>
                                 <button onClick={logout} className="btn btn-primary">
                                     LogOut

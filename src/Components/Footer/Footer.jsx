@@ -9,6 +9,12 @@ const Footer = () => {
     const emailRef = useRef();
     const handleSubmit = (e) => {
         e.preventDefault();
+        const email = emailRef.current?.value?.trim();
+
+        if(!email){
+            alert("Please Write your email")
+            return
+        }
         Swal.fire({
             icon: "success",
             title: "Subscribed!",
@@ -16,7 +22,7 @@ const Footer = () => {
             timer: 2000,
             showConfirmButton: false,
         });
-        if(emailRef.current) emailRef.current.value = "";
+         emailRef.current.value = "";
     };
 
 
@@ -25,7 +31,9 @@ const Footer = () => {
             <div className="w-11/12 mx-auto">
                 <div className="footer sm:footer-horizontal  text-base-content px-4">
                     <aside>
-                        <img to={"/"} src={logo} alt="logo" className="w-20" />
+                        <Link to={"/"}>
+                            <img src={logo} alt="logo" className="w-20" />
+                        </Link>
                         <p className="text-gray-400 font-semibold">
                             Toy-Topia
                             <br />
@@ -34,10 +42,10 @@ const Footer = () => {
                     </aside>
                     <nav>
                         <h6 className="footer-title">Company</h6>
-                        <Link className="link link-hover">About us</Link>
-                        <Link className="link link-hover">Contact</Link>
-                        <Link className="link link-hover">Jobs</Link>
-                        <Link className="link link-hover">Press kit</Link>
+                        <a className="link link-hover">About us</a>
+                        <a className="link link-hover">Contact</a>
+                        <a className="link link-hover">Jobs</a>
+                        <a className="link link-hover">Press kit</a>
                     </nav>
                     <nav>
                         <h6 className="footer-title">Legal</h6>
@@ -47,7 +55,7 @@ const Footer = () => {
                         <Link to={"/privacy"} className="link link-hover">
                             Privacy policy
                         </Link>
-                        <Link className="link link-hover">Cookie policy</Link>
+                        <a className="link link-hover">Cookie policy</a>
                     </nav>
                     <form onSubmit={handleSubmit}>
                         <h6 className="footer-title">Newsletter</h6>
@@ -68,9 +76,9 @@ const Footer = () => {
                             <Link to={"https://www.facebook.com/mdshahidulislam8854"}>
                                 <FaFacebook className="text-3xl" />
                             </Link>
-                            <Link>
+                            <a>
                                 <FaTwitter className="text-3xl" />
-                            </Link>
+                            </a>
                         </div>
                     </nav>
                 </div>

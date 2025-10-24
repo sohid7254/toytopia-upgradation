@@ -2,16 +2,16 @@ import React from 'react';
 import useData from '../Hooks/useData';
 import LoadingAnimation from '../Components/LoadingAnimation/LoadingAnimation';
 import ToysCard from '../Components/ToysCard/ToysCard';
-import { Helmet } from 'react-helmet';
+
 
 const AllToys = () => {
     const {data, loading} = useData()
     
     return (
         <>
-    <Helmet>
-        <title>Toy-topia/All-toys</title>
-    </Helmet>
+
+        <title>Toy-Topia | All-toys</title>
+    
             <div>
                 <h2 className="text-center mt-5 text-2xl font-bold">
                     Buy Your <span className="text-orange-400">Favourite</span> <br />

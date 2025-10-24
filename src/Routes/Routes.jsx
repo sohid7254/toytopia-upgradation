@@ -12,6 +12,7 @@ import Feedback from "../Pages/Feedback";
 import TermsAndConditions from "../Pages/TermsAndConditions";
 import PrivacyPolicy from "../Pages/PrivacyPolicy";
 import PrivateRoute from "../Provider/PrivateRoute";
+import LoadingAnimation from "../Components/LoadingAnimation/LoadingAnimation";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
             {
                 index: true,
                 element: <Home />,
+                hydrateFallbackElement: <LoadingAnimation />,
             },
             {
                 path: "/allToys",
@@ -29,6 +31,7 @@ const router = createBrowserRouter([
                         <AllToys />
                     </PrivateRoute>
                 ),
+                hydrateFallbackElement: <LoadingAnimation />,
             },
             {
                 path: "/my-profile",
@@ -37,6 +40,7 @@ const router = createBrowserRouter([
                         <MyProfile />
                     </PrivateRoute>
                 ),
+                hydrateFallbackElement: <LoadingAnimation />,
             },
             {
                 path: "/toyDetails/:id",
@@ -45,6 +49,7 @@ const router = createBrowserRouter([
                         <ToyDetails />
                     </PrivateRoute>
                 ),
+                hydrateFallbackElement: <LoadingAnimation />,
             },
             {
                 path: "/login",

@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
 
 const LogIn = () => {
-    const emailRef = useRef()
+    const [email, setEmail] = useState("")
     const { login, loginWithGoogle, setUser, loading, setLoading } = useContext(AuthContext);
     const [showPassword, setShowPassword] = useState(false);
     const navigate = useNavigate();
@@ -46,13 +46,14 @@ const LogIn = () => {
 
     return (
         <div className="flex justify-center items-center min-h-screen">
+            <title>Toy-Topia | LogIn</title>
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl py-5">
                 <h2 className="text-2xl font-semibold text-center">Log In Your Account</h2>
                 <form className="card-body" onSubmit={handleLogIn}>
                     <fieldset className="fieldset">
                         {/* email */}
                         <label className="font-bold">Email Address</label>
-                        <input type="email" ref={emailRef} name="email" className="input" placeholder="Enter your email address" required />
+                        <input type="email" value={email} name="email" className="input" onChange={(e)=> setEmail(e.target.value)} placeholder="Enter your email address" required />
                         {/* password */}
                         <label className="font-bold ">Password</label>
                         <div className="relative">
@@ -62,7 +63,7 @@ const LogIn = () => {
                             </span>
                         </div>
                         <div>
-                            <Link to={"/resetpass"} state={{email: emailRef.current?.value}} className="link link-hover">
+                            <Link to={"/resetpass"} state={{email}} className="link link-hover">
                                 Forgot password?
                             </Link>
                         </div>
