@@ -26,11 +26,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/allToys",
-                element: (
-                    <PrivateRoute>
-                        <AllToys />
-                    </PrivateRoute>
-                ),
+                element: <AllToys />,
                 hydrateFallbackElement: <LoadingAnimation />,
             },
             {
@@ -44,11 +40,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/toyDetails/:id",
-                element: (
-                    <PrivateRoute>
-                        <ToyDetails />
-                    </PrivateRoute>
-                ),
+                element: <ToyDetails />,
                 hydrateFallbackElement: <LoadingAnimation />,
             },
             {
@@ -65,11 +57,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/feedback",
-                element: (
-                    <PrivateRoute>
-                        <Feedback />
-                    </PrivateRoute>
-                ),
+                element: <Feedback />,
             },
             {
                 path: "/terms",
@@ -86,6 +74,5 @@ const router = createBrowserRouter([
         element: <Error404 />,
     },
 ]);
-
 
 export default router;

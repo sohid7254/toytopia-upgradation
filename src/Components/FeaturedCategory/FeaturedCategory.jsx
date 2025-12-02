@@ -17,7 +17,7 @@ const FeaturedCategory = () => {
             {/* Category Cards */}
             <div className="w-11/12 mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-items-center">
                 {/* 1st */}
-                <div className="flex flex-col items-center space-y-3 ">
+                <div className="flex flex-col items-center space-y-3" data-aos="fade-up">
                     <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full bg-white shadow-md flex items-center justify-center overflow-hidden">
                         <img src={image2} alt="Baby & Toddler Toys" className="object-contain w-24 h-24 sm:w-28 sm:h-28" />
                     </div>
@@ -25,7 +25,7 @@ const FeaturedCategory = () => {
                 </div>
 
                 {/* 2nd */}
-                <div className="flex flex-col items-center space-y-3 ">
+                <div className="flex flex-col items-center space-y-3" data-aos="fade-up" data-aos-delay="100">
                     <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full bg-white shadow-md flex items-center justify-center overflow-hidden">
                         <img src={image3} alt="Building & Construction Toys" className="object-contain w-24 h-24 sm:w-28 sm:h-28" />
                     </div>
@@ -33,7 +33,7 @@ const FeaturedCategory = () => {
                 </div>
 
                 {/* 3rd */}
-                <div className="flex flex-col items-center space-y-3 ">
+                <div className="flex flex-col items-center space-y-3" data-aos="fade-up" data-aos-delay="200">
                     <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full bg-white shadow-md flex items-center justify-center overflow-hidden">
                         <img src={image4} alt="Learning & Education" className="object-contain w-24 h-24 sm:w-28 sm:h-28" />
                     </div>
@@ -41,7 +41,7 @@ const FeaturedCategory = () => {
                 </div>
 
                 {/* 4th */}
-                <div className="flex flex-col items-center space-y-3 ">
+                <div className="flex flex-col items-center space-y-3" data-aos="fade-up" data-aos-delay="300">
                     <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full bg-white shadow-md flex items-center justify-center overflow-hidden">
                         <img src={image1} alt="Radio & Remote Control" className="object-contain w-24 h-24 sm:w-28 sm:h-28" />
                     </div>
@@ -49,7 +49,7 @@ const FeaturedCategory = () => {
                 </div>
 
                 {/* 5th */}
-                <div className="flex flex-col items-center space-y-3 ">
+                <div className="flex flex-col items-center space-y-3" data-aos="fade-up" data-aos-delay="400">
                     <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full bg-white shadow-md flex items-center justify-center overflow-hidden">
                         <img src={image5} alt="Sport & Outdoor" className="object-contain w-24 h-24 sm:w-28 sm:h-28" />
                     </div>

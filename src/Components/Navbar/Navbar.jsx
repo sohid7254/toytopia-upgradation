@@ -7,7 +7,7 @@ const Navbar = () => {
     const { user, logout } = useContext(AuthContext);
 
     return (
-        <div className="bg-blend-darken shadow-sm">
+        <div className=" bg-white shadow-md sticky top-0 z-50">
             <div className="navbar w-11/12 mx-auto flex items-center justify-between lg:justify-between">
                 {/* LEFT - Logo */}
                 <div className="">
@@ -24,14 +24,23 @@ const Navbar = () => {
                                 Home
                             </NavLink>
                         </li>
-                        <li>
-                            <NavLink to="/my-profile" className={({ isActive }) => (isActive ? "text-purple-600 font-bold" : "text-gray-600")}>
-                                My Profile
-                            </NavLink>
-                        </li>
+                        {user ? (
+                            <li>
+                                <NavLink to="/my-profile" className={({ isActive }) => (isActive ? "text-purple-600 font-bold" : "text-gray-600")}>
+                                    My Profile
+                                </NavLink>
+                            </li>
+                        ) : (
+                            ""
+                        )}
                         <li>
                             <NavLink to="/feedback" className={({ isActive }) => (isActive ? "text-purple-600 font-bold" : "text-gray-600")}>
                                 FeedBack
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/allToys" className={({ isActive }) => (isActive ? "text-purple-600 font-bold" : "text-gray-600")}>
+                                All-Toys
                             </NavLink>
                         </li>
                     </ul>
