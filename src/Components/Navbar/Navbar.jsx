@@ -88,14 +88,33 @@ const Navbar = () => {
                                         Home
                                     </NavLink>
                                 </li>
-                                <li>
-                                    <NavLink to="/my-profile" className={({ isActive }) => (isActive ? "text-purple-600 font-bold" : "text-gray-600")}>
-                                        My Profile
-                                    </NavLink>
-                                </li>
+                                {user ? (
+                                    <li>
+                                        <NavLink to="/my-profile" className={({ isActive }) => (isActive ? "text-purple-600 font-bold" : "text-gray-600")}>
+                                            My Profile
+                                        </NavLink>
+                                    </li>
+                                ) : (
+                                    " "
+                                )}
                                 <li>
                                     <NavLink to="/feedback" className={({ isActive }) => (isActive ? "text-purple-600 font-bold" : "text-gray-600")}>
                                         FeedBack
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/allToys" className={({ isActive }) => (isActive ? "text-purple-600 font-bold" : "text-gray-600")}>
+                                        All-Toys
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/support" className={({ isActive }) => (isActive ? "text-purple-600 font-bold" : "text-gray-600")}>
+                                        Support
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/FAQ" className={({ isActive }) => (isActive ? "text-purple-600 font-bold" : "text-gray-600")}>
+                                        FAQ
                                     </NavLink>
                                 </li>
                             </ul>
