@@ -29,7 +29,7 @@ const ToysCard = ({data}) => {
                         <h2 className="font-bold">DesCription:</h2>
                         <div className="text-gray-500">{description.length > 200 ? <>{description.slice(0, 50)}......</> : description}</div>
                     </div>
-                    <Link to={`/toyDetails/${toyId}`} className="btn bg-amber-500 w-full mt-2">
+                    <Link to={`/toyDetails/${toyId}`} className="btn btn-primary w-full mt-2">
                         View More
                     </Link>
                 </div>

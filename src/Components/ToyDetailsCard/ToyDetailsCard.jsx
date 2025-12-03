@@ -68,7 +68,7 @@ const ToyDetailsCard = ({ toy }) => {
 
             {/* Back Button */}
             <div className="text-center">
-                <Link to="/allToys" className="inline-block bg-amber-500 px-6 py-3 rounded-lg text-white font-semibold shadow-md hover:bg-amber-600 transition">
+                <Link to="/allToys" className="inline-block bg-primary text-white px-6 py-3 rounded-lg font-semibold shadow-md  ">
                     Go Back
                 </Link>
             </div>
