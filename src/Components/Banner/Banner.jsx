@@ -16,9 +16,7 @@ const Banner = () => {
                 <p className="text-sm font-semibold mb-3">
                     From <span className="text-black font-bold">save 20% </span> off in this season
                 </p>
-                <button className="bg-blue-600 hover:bg-blue-400 text-white px-6 py-2 rounded-full text-lg transition" data-aos="zoom-in">
-                    Explore
-                </button>
+                
             </div>
 
             <div className="relative w-11/12 mx-auto grid grid-cols-2 md:grid-cols-4 sm:grid-cols-2 gap-4 py-10">

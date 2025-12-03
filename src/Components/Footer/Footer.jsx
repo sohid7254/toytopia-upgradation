@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import logo from "../../assets/logo.png"
 import Swal from "sweetalert2";
 
-import { FaFacebook, FaGithub, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { Link } from 'react-router';
 
 const Footer = () => {
@@ -42,10 +42,15 @@ const Footer = () => {
                     </aside>
                     <nav>
                         <h6 className="footer-title">Company</h6>
-                        <a className="link link-hover">About us</a>
-                        <a className="link link-hover">Contact</a>
-                        <a className="link link-hover">Jobs</a>
-                        <a className="link link-hover">Press kit</a>
+                        <Link to={"/aboutUs"} className="link link-hover">
+                            About us
+                        </Link>
+                        <Link to={"/contactUs"} className="link link-hover">
+                            Contact
+                        </Link>
+                        <Link to={"/support"} className="link link-hover">
+                            Support
+                        </Link>
                     </nav>
                     <nav>
                         <h6 className="footer-title">Legal</h6>
@@ -55,7 +60,6 @@ const Footer = () => {
                         <Link to={"/privacy"} className="link link-hover">
                             Privacy policy
                         </Link>
-                        <a className="link link-hover">Cookie policy</a>
                     </nav>
                     <form onSubmit={handleSubmit}>
                         <h6 className="footer-title">Newsletter</h6>
@@ -76,9 +80,9 @@ const Footer = () => {
                             <Link to={"https://www.facebook.com/mdshahidulislam8854"}>
                                 <FaFacebook className="text-3xl" />
                             </Link>
-                            <a>
-                                <FaTwitter className="text-3xl" />
-                            </a>
+                            <Link to={"https://www.linkedin.com/in/shahidulislam7254/"}>
+                                <FaLinkedin className="text-3xl" />
+                            </Link>
                         </div>
                     </nav>
                 </div>

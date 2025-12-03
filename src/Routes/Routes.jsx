@@ -13,6 +13,10 @@ import TermsAndConditions from "../Pages/TermsAndConditions";
 import PrivacyPolicy from "../Pages/PrivacyPolicy";
 import PrivateRoute from "../Provider/PrivateRoute";
 import LoadingAnimation from "../Components/LoadingAnimation/LoadingAnimation";
+import Support from "../Pages/Support";
+import FAQ from "../Pages/FAQ";
+import AboutUsComponent from "../Pages/AboutUs";
+import ContactUs from "../Pages/ContactUs";
 
 const router = createBrowserRouter([
     {
@@ -67,6 +71,22 @@ const router = createBrowserRouter([
                 path: "/privacy",
                 element: <PrivacyPolicy />,
             },
+            {
+                path: "/support",
+                element: <Support/>
+            },
+            {
+                path: "/FAQ",
+                element: <FAQ/>
+            },
+            {
+                path: "/aboutUs",
+                element: <AboutUsComponent/>
+            },
+            {
+                path: "/contactUs",
+                element: <ContactUs/>
+            }
         ],
     },
     {

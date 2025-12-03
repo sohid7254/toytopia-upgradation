@@ -43,6 +43,16 @@ const Navbar = () => {
                                 All-Toys
                             </NavLink>
                         </li>
+                        <li>
+                            <NavLink to="/support" className={({ isActive }) => (isActive ? "text-purple-600 font-bold" : "text-gray-600")}>
+                                Support
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/FAQ" className={({ isActive }) => (isActive ? "text-purple-600 font-bold" : "text-gray-600")}>
+                                FAQ
+                            </NavLink>
+                        </li>
                     </ul>
                 </div>
 

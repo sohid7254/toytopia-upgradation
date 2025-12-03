@@ -39,8 +39,9 @@ const AllToys = () => {
                         <select value={filterCategory} onChange={(e) => setFilterCategory(e.target.value)} className="select select-bordered select-sm">
                             <option value="all">All Categories</option>
                             <option value="Educational Toys">Educational Toys</option>
-                            <option value="Figures">Figures</option>
-                            <option value="Games">Games</option>
+                            <option value="Vehicles & Tracks">Vehicles & Tracks</option>
+                            <option value="Arts & Crafts">Arts & Crafts</option>
+                            <option value="Board & Family Games">Board & Family Games</option>
                         </select>
                     </div>
 

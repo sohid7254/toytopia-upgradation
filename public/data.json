@@ -9,7 +9,7 @@
         "availableQuantity": 75,
         "description": "The Lego Classic Bricks set is one of the most timeless and creative toys ever designed for children and families. It comes with a rich assortment of colorful blocks, wheels, windows, and unique shapes that encourage endless imagination. Kids can build houses, cars, castles, animals, and whatever their creativity sparks. The set helps children enhance their motor skills, problem-solving abilities, and patience as they plan and assemble their ideas. Each piece is made from durable, child-safe plastic that ensures long-lasting fun. Parents appreciate that Lego Classic sets are not just about play—they promote collaboration, innovation, and cognitive development. Whether played alone or with friends, this toy helps foster creativity and teamwork. The instructions included offer a few ideas, but the real fun begins when kids experiment on their own. Perfect for ages 4 and up, the Lego Classic Bricks set is more than just a toy—it’s a foundation for imaginative learning and limitless construction possibilities that can keep kids entertained for hours or even days.",
         "pictureURL": "https://i.ibb.co.com/DgGm7VCL/lego.jpg",
-        "subCategory": "Building Blocks"
+        "subCategory": "Board & Family Games"
     },
     {
         "toyId": 2,
@@ -33,7 +33,7 @@
         "availableQuantity": 40,
         "description": "The Barbie Dreamhouse is a spectacular multi-story playset that brings Barbie’s glamorous lifestyle to life. This detailed mansion features three luxurious floors, seven furnished rooms, a working elevator, and even a rooftop pool. Children can role-play endless scenarios—from cooking in the kitchen to relaxing in the living room or hosting a party by the pool. Each area is intricately designed with vibrant colors, textures, and accessories that spark storytelling and creativity. The Dreamhouse promotes cooperative play and helps children build social and communication skills. Made from high-quality, safe plastic, it’s durable enough for years of imaginative play. With over 70 accessories included, the Dreamhouse allows kids to design, decorate, and explore their dream world. The design also encourages fine motor skills and creative thinking. Whether used with Barbie dolls or other mini figures, this iconic toy inspires dreams and endless adventures, making it a treasured centerpiece for any young dreamer’s playroom.",
         "pictureURL": "https://i.ibb.co.com/yJQFfKW/barbie.jpg",
-        "subCategory": "Dolls & Playhouses"
+        "subCategory": "Board & Family Games"
     },
     {
         "toyId": 4,
@@ -45,7 +45,7 @@
         "availableQuantity": 90,
         "description": "The Nerf Elite Blaster Set is a must-have for adventure-loving kids who enjoy active play. Equipped with precision-engineered foam darts, this set delivers both power and accuracy in every shot. The ergonomic grip and lightweight design make it comfortable for long play sessions indoors or outdoors. Kids can compete in friendly battles, improve hand-eye coordination, and develop quick reflexes. Each blaster features a tactical rail system, allowing attachments like scopes or dart holders. Parents appreciate the soft foam darts that ensure safety during energetic matches. The set encourages physical activity, teamwork, and fair play. Its durable plastic body is built to withstand rough handling, and the quick-reload mechanism keeps the action fast-paced. Whether used in the backyard or at a Nerf party, the Elite Blaster Set promises thrilling fun and safe competition for kids and teens alike. It’s an exciting combination of action, strategy, and play that fuels energy and imagination.",
         "pictureURL": "https://i.ibb.co.com/yBqrqpYz/Nerf-Elite.jpg",
-        "subCategory": "Outdoor & Action Toys"
+        "subCategory": "Board & Family Games"
     },
     {
         "toyId": 5,
@@ -57,7 +57,7 @@
         "availableQuantity": 50,
         "description": "The Fisher-Price Learning Robot is an interactive educational companion for toddlers, designed to make learning fun and engaging. This smart robot responds to touch, sound, and motion with cheerful lights, songs, and movements. It introduces kids to letters, numbers, colors, and basic problem-solving through entertaining games and music. Parents love how it promotes curiosity and early learning in a playful environment. The robot’s colorful LED face changes expressions, making interactions lively and expressive. Built with safe materials, it’s sturdy enough to handle daily play. It also encourages physical activity as kids dance along with its rhythms. The robot grows with your child, offering multiple levels of learning that adapt to different ages. Its voice prompts and cheerful responses create a sense of companionship, making learning a delightful experience. This toy doesn’t just teach facts—it inspires curiosity, imagination, and confidence in young learners, giving them a playful start in the world of technology and education.",
         "pictureURL": "https://i.ibb.co.com/h1R4291G/fisher.webp",
-        "subCategory": "Educational Toys"
+        "subCategory": "Vehicles & Tracks"
     },
     {
         "toyId": 6,
@@ -93,7 +93,7 @@
         "availableQuantity": 45,
         "description": "The Melissa & Doug Wooden Train Set is a beautiful combination of craftsmanship, learning, and imaginative play. This premium wooden railway set features interlocking tracks, colorful engines, and multiple accessories like bridges, tunnels, and trees. Children can design and redesign their train routes, enhancing creativity and spatial awareness. Made from sustainable wood with non-toxic paints, the set ensures safety and durability. It’s perfect for developing problem-solving skills and hand-eye coordination while encouraging cooperative play. Parents love that it keeps kids engaged for hours without screens or batteries. The realistic magnetic connectors make it easy for little hands to attach train cars, promoting fine motor development. The timeless design blends nostalgia with educational fun, making it a great gift for both boys and girls. As kids grow, they can expand their train world by adding new tracks or vehicles. It’s a toy that inspires adventure, creativity, and a lifelong love for building and exploring.",
         "pictureURL": "https://i.ibb.co.com/qLm6wgfK/melisia.jpg",
-        "subCategory": "Building & Wooden Toys"
+        "subCategory": "Vehicles & Tracks"
     },
     {
         "toyId": 9,
@@ -117,7 +117,7 @@
         "availableQuantity": 95,
         "description": "The Paw Patrol Rescue Vehicle brings children’s favorite characters to life with action-packed fun and adventure. Each vehicle comes with a movable rescue feature and an exclusive figure of a beloved Paw Patrol pup. Kids can recreate their favorite missions from the TV show or invent new rescues of their own. The durable design ensures long-lasting play, while the bright colors and realistic details make every mission exciting. Parents appreciate that this toy encourages storytelling, problem-solving, and empathy as kids act out helping others. It also promotes teamwork and imaginative play when shared with friends. Collecting all the characters adds even more excitement, allowing kids to build their own Paw Patrol world. Designed for preschoolers, it’s easy to handle and safe for small hands. Whether saving the day from fire, water, or snow, this rescue vehicle teaches courage, friendship, and creativity—all while providing hours of engaging entertainment.",
         "pictureURL": "https://i.ibb.co.com/sJMBdsQX/recsue-vehicle.jpg",
-        "subCategory": "Action Figures & Vehicles"
+        "subCategory": "Vehicles & Tracks"
     },
     {
         "toyId": 11,

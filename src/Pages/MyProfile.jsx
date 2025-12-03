@@ -51,7 +51,7 @@ const MyProfile = () => {
                         <input type="text" name="photoURL" defaultValue={user?.photoURL} placeholder="Update Image URL" className="input input-bordered w-full focus:outline-none focus:ring-2 focus:ring-orange-400 transition duration-200" required />
                     </div>
 
-                    <button type="submit" className="btn bg-gradient-to-r from-purple-500 to-orange-400 text-white font-bold hover:scale-105 transition-transform duration-200 w-full">
+                    <button type="submit" className="btn btn-primary  text-white font-bold  w-full">
                         Update Profile
                     </button>
                 </form>

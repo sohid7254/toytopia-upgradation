@@ -6,6 +6,7 @@ import useData from '../Hooks/useData';
 import LoadingAnimation from '../Components/LoadingAnimation/LoadingAnimation';
 import { Link } from 'react-router';
 import ToysCard from '../Components/ToysCard/ToysCard';
+import OffersSection from '../Components/OffersSection/OffersSection';
 
 const Home = () => {
 
@@ -36,6 +37,7 @@ const Home = () => {
                         Show All
                     </Link>
                 </div>
+                <OffersSection/>
             </div>
         </>
     );
